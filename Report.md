@@ -59,3 +59,6 @@ Result <- ORDER BY Year_Released ASC ON Movies
 T1 <- GROUP BY Department_ID FROM EMPLOYEE HAVING
 AVG(Salary) > 50,000 RETURN MAX(Salary)
 ```
+## Learnings
+
+## Contributions
