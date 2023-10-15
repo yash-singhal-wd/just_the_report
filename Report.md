@@ -30,6 +30,14 @@ SORT <table_name> BY <column_name1, column_name2,..., column_namek> IN
 SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ```
 
+<ul>
+  <li> We get the file name through the command. We fetch this file one block at a time and sort individual block. </li>
+  <li> We have all the individual blocks sorted for now. Now we take 9 blocks at a time. </li>
+  <li> Do 9-way merging into a "write-back" buffer. As soon as this buffer fills up we write it back and start afresh with a new empty block. </li>
+  <li> As we can see this creates 9-block sorted sub file and then we merge such subfiles using the same 9-way merge. </li>
+  <li> When we are done, we get the entire file as one sorted file with original number of blocks </li>
+</ul>
+
 ## JOIN
 #### Syntax
 ```sql
