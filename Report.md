@@ -29,7 +29,7 @@ SORT <table_name> BY <column_name1, column_name2,..., column_namek> IN
 ```sql
 SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ```
-![alt text](https://ibb.co/FzHHgWM)
+![3 way merge]([https://ibb.co/FzHHgWM](https://pasteboard.co/IceeDf2RfU5q.jpg))
 
 <ul>
   <li> We get the file name through the command. We fetch this file one block at a time and sort individual block. </li>
@@ -75,3 +75,9 @@ AVG(Salary) > 50,000 RETURN MAX(Salary)
 ## Learnings
 
 ## Contributions
+| Names | Contributions |
+|-----------|-----------|
+| Yash Singhal | External-Sort & Join & Order-By |
+| Priyanshu Bansal | Write-Back & Order-By |
+| Anurag Ghosh | External-Sort & Join & Group-By|
+
