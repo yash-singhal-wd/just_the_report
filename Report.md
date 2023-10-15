@@ -11,6 +11,10 @@ Submitted By
 
 ## Assumptions
 <ul>
+  <li>All the data being written into the .csv file must be int (no commas). </li>
+  <li> Summation of all values not greater than range of int.</li>
+  <li> Number of columns in resultant table should not exceed size of block after join.</li>
+  <li> All float values will be rounded to floor value before being written back into the file.</li>
   <li> </li>
   <li> </li>
 </ul>
