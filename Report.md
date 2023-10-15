@@ -29,7 +29,7 @@ SORT <table_name> BY <column_name1, column_name2,..., column_namek> IN
 ```sql
 SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ```
-<img src="your_relative_path_here" width="350" title="hover text">
+<img src="./image.jpeg" width="350" title="hover text">
 
 <ul>
   <li> We get the file name through the command. We fetch this file one block at a time and sort individual block. </li>
@@ -49,6 +49,11 @@ SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ```sql
 Result <- JOIN Students, Courses ON ID == RollNo 
 ```
+<ul>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+</ul>
 
 ## Order By
 #### Syntax
@@ -59,6 +64,11 @@ Result <- JOIN Students, Courses ON ID == RollNo
 ```sql
 Result <- ORDER BY Year_Released ASC ON Movies
 ```
+<ul>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+</ul>
 
 ## Group By
 #### Syntax
@@ -72,7 +82,19 @@ Result <- ORDER BY Year_Released ASC ON Movies
 T1 <- GROUP BY Department_ID FROM EMPLOYEE HAVING
 AVG(Salary) > 50,000 RETURN MAX(Salary)
 ```
+<ul>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+</ul>
+
 ## Learnings
+
+<ul>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+</ul>
 
 ## Contributions
 | Names | Contributions |
