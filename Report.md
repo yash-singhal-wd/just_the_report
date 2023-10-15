@@ -29,7 +29,7 @@ SORT <table_name> BY <column_name1, column_name2,..., column_namek> IN
 ```sql
 SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ```
-![3 way merge]([https://ibb.co/FzHHgWM](https://pasteboard.co/IceeDf2RfU5q.jpg))
+<img src="your_relative_path_here" width="350" title="hover text">
 
 <ul>
   <li> We get the file name through the command. We fetch this file one block at a time and sort individual block. </li>
