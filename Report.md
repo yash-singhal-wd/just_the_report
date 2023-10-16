@@ -75,8 +75,8 @@ Result <- ORDER BY Year_Released ASC ON Movies
 
 #### Procedure
 <ul>
-  <li> </li>
-  <li> </li>
+  <li> This is exactly as SORT functionality. </li>
+  <li> The difference is the sort result being stored in </li>
   <li> </li>
 </ul>
 
