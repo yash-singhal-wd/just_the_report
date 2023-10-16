@@ -94,7 +94,7 @@ AVG(Salary) > 50,000 RETURN MAX(Salary)
 ```
 #### Procedure
 <ul>
-  <li> </li>
+  <li> Aggregate functions are SUM, MIN, MAX, COUNT and AVG</li>
   <li> </li>
   <li> </li>
 </ul>
