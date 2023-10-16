@@ -76,8 +76,9 @@ Result <- ORDER BY Year_Released ASC ON Movies
 #### Procedure
 <ul>
   <li> This is exactly as SORT functionality. </li>
-  <li> The difference is the sort result being stored in </li>
-  <li> </li>
+  <li> The difference is the sort result being stored in the table itself, but here the result is being stored in the table name being provided </li>
+  <li> Just that the sort is being applied on the table and column received from the command. </li>
+  
 </ul>
 
 ## Group By
@@ -94,9 +95,13 @@ AVG(Salary) > 50,000 RETURN MAX(Salary)
 ```
 #### Procedure
 <ul>
-  <li> Aggregate functions are SUM, MIN, MAX, COUNT and AVG</li>
-  <li> </li>
-  <li> </li>
+  <li> Here we capture the table, its grouping column, the aggregate function, and return value. </li>
+  <li> Aggregate functions are SUM, MIN, MAX, COUNT and AVG.</li>
+  <li> The table is then sorted (External Sort) on the grouping column. </li>
+  <li> Now we traverse the sorted table for each value and while traversing we calculate the 4 aggreagate functions simultaneously- SUM, MIN, MAX, COUNT.</li>
+  <li> SUM and COUNT are the only ones that need constant updation.</li>
+  <li> As soon as we hit a new value, we check the HAVING clause and if it satisfies the HAVING clause we push the RETURN value asked by the command.</li>
+  <li> We then startd with a new distinct value. </li>
 </ul>
 
 ## Learnings
