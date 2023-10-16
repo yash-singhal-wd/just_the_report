@@ -30,6 +30,7 @@ SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ```
 <img src="./image.jpeg" width="600" title="hover text">
 
+#### Procedure
 <ul>
   <li> We get the file name through the command. We fetch this file one block at a time and sort individual block. </li>
   <li> We have all the individual blocks sorted for now. Now we take 9 blocks at a time. </li>
@@ -41,15 +42,17 @@ SORT EMPLOYEE BY GENDER, SALARY IN ASC, DESC
 ## JOIN
 #### Syntax
 ```sql
-<new_relation_name> <- JOIN <tablename1>, <tablename2> ON <column1>
-<bin_op> <column2>
+<new_relation_name> <- JOIN <tablename1>, <tablename2> ON
+<column1> <bin_op> <column2>
 ```
 #### Example
 ```sql
 Result <- JOIN Students, Courses ON ID == RollNo 
 ```
+
+#### Procedure
 <ul>
-  <li> </li>
+  <li> As depicted fr </li>
   <li> </li>
   <li> </li>
 </ul>
@@ -63,6 +66,8 @@ Result <- JOIN Students, Courses ON ID == RollNo
 ```sql
 Result <- ORDER BY Year_Released ASC ON Movies
 ```
+
+#### Procedure
 <ul>
   <li> </li>
   <li> </li>
@@ -81,6 +86,7 @@ Result <- ORDER BY Year_Released ASC ON Movies
 T1 <- GROUP BY Department_ID FROM EMPLOYEE HAVING
 AVG(Salary) > 50,000 RETURN MAX(Salary)
 ```
+#### Procedure
 <ul>
   <li> </li>
   <li> </li>
