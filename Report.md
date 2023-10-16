@@ -90,9 +90,12 @@ AVG(Salary) > 50,000 RETURN MAX(Salary)
 ## Learnings
 
 <ul>
-  <li> </li>
-  <li> </li>
-  <li> </li>
+  <li> Implementing External Sort where only a part of file can be accessed once. </li>
+  <li> Difference between implementing a 2 way merge and a multiple way merge (>=3).</li>
+  <li> We learnt how complexity reduces for Join, Order By and Group By if we are working on sorted tables.</li>
+  <li> We learnt why join is an expensive operation compared to just Order By and Group By. </li>
+  <li> If Join is performed on only equality condition, it can be further optimized. </li>
+  <li> Importance of doing operations in an optimized manner so as to improve query performance. </li>
 </ul>
 
 ## Contributions
