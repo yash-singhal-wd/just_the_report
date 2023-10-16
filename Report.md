@@ -52,9 +52,15 @@ Result <- JOIN Students, Courses ON ID == RollNo
 
 #### Procedure
 <ul>
-  <li> As depicted fr </li>
-  <li> </li>
-  <li> </li>
+  <li> As depicted from the syntax, we store both tables, their respectictive columns and the binary operator in the program. </li>
+  <li> Then we sort both the tables on the respective columns in ascending order using External Sort implemented above </li>
+  <li> Now according to the binary operator we traverse the 2 tables and store result into the resultant table.</li>
+  <li> For all binary operators we treat one table as "stationary" table and the other as "moving" table. </li>
+  <li> For the "stationary" table: we just take one row at a time and then match the column with the respective column of the other table.</li>
+  <li> For the "moving" table we match all the rows that are matching in sequence (as they are sorted).</li>
+  <li> As soon as we get a value that is not matching, we move to the next row in the stationary table and the first valid entry in the moving table. </li>
+  <li> This first valid entry move is where the added optimization for equijoin lies.</li>
+  <li> For joins with condition "<" and "<=" we are using the same implementation as ">" and ">=" just that we are switching the tables.</li>
 </ul>
 
 ## Order By
