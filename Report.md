@@ -15,6 +15,7 @@ Submitted By
   <li> Summation of all values not greater than range of int.</li>
   <li> Number of columns in resultant table should not exceed size of block after join.</li>
   <li> All float values will be rounded to floor value before being written back into the file.</li>
+  <li> Tables with no rows are not loaded. </li>
 </ul>
 
 ## External Sort
