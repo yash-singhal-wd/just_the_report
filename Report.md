@@ -1,17 +1,8 @@
-# DSM23 Project Phase - 2
-
-Submission date: 
-
-Submitted By
-| Roll number | Names |
-|-----------|-----------|
-| 2022201004 | Yash Singhal |
-| 2022201079 | Priyanshu Bansal |
-| 2022202023 | Anurag Ghosh |
+# Query Processing Engine - Phase 2
 
 ## Assumptions
 <ul>
-  <li>All the data being written into the .csv file must be int (no commas). </li>
+  <li> All the data being written into the .csv file must be int (no commas). </li>
   <li> Summation of all values not greater than range of int.</li>
   <li> Number of columns in resultant table should not exceed size of block after join.</li>
   <li> All float values will be rounded to floor value before being written back into the file.</li>
@@ -114,11 +105,3 @@ AVG(Salary) > 50,000 RETURN MAX(Salary)
   <li> If Join is performed on only equality condition, it can be further optimized. </li>
   <li> Importance of doing operations in an optimized manner so as to improve query performance. </li>
 </ul>
-
-## Contributions
-| Names | Contributions |
-|-----------|-----------|
-| Yash Singhal | External-Sort & Join & Order-By |
-| Priyanshu Bansal | Write-Back & Order-By |
-| Anurag Ghosh | External-Sort & Join & Group-By|
-
